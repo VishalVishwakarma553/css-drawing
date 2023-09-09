@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: skyblue;
+    overflow-x: hidden;
+}
+
+.head {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 8rem;
+    left: 8rem;
+    z-index: 10;
+}
+
+.face {
+    height: 360px;
+    width: 360px;
+    border-radius: 50%;
+    border: 1px solid black;
+
+    background-color: white;
+    margin-top: 4rem;
+    /* display: flex;
+    flex-direction: row-reverse; */
+}
+
+.eye {
+    height: 180px;
+    width: 122px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+    left: 3rem;
+    bottom: 2rem;
+}
+
+.eye-lens {
+    height: 50px;
+    width: 30px;
+    background-color: black;
+    border-style: solid;
+    border-color: black;
+    /* border-top-width: 17px;
+    border-right-width: 14px;
+    border-bottom-width: 13.8px;
+    border-left-width: 11px; */
+    border-radius: 50%;
+    position: absolute;
+    top: 7.5rem;
+    left: 3.2rem;
+}
+
+.inside-eye-lens {
+    height: 24px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 1.2rem;
+    left: 0.4rem;
+    right: 20%;
+}
+
+.two {
+    position: relative;
+    left: 173px;
+    bottom: 217px;
+
+}
+
+.to {
+    position: relative;
+    left: 2.1rem;
+}
+
+.nose {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    top: 12rem;
+    left: 8.97rem;
+}
+
+.inside-nose {
+    height: 28px;
+    width: 28px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: absolute;
+    top: 3.2rem;
+    left: 1.2rem;
+}
+
+.mouth {
+    height: 220px;
+    width: 220px;
+    border-bottom: 3px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top: 10rem;
+    left: 5.6rem;
+    transform: rotateY(5deg);
+}
+
+.inside-mouth {
+    height: 87px;
+    border-left: 2px solid black;
+    position: absolute;
+    top: 8.4rem;
+    left: 6.7rem;
+}
+
+.moustacheOne {
+    width: 160px;
+    border-bottom: 2px solid black;
+    position: relative;
+    bottom: 14rem;
+    right: 6rem;
+    transform: rotate(15deg);
+}
+
+.moustacheTwo {
+    width: 160px;
+    border-bottom: 2px solid black;
+    position: relative;
+    right: 5.8rem;
+    bottom: 10.4rem;
+}
+
+.moustacheRightOne {
+    width: 160px;
+    border-bottom: 2px solid black;
+    position: relative;
+    bottom: 14.7rem;
+    left: 18.2rem;
+    transform: rotateZ(-16deg);
+}
+
+.moustacheRightTwo {
+    width: 160px;
+    border-bottom: 2px solid black;
+    position: relative;
+    bottom: 11.1rem;
+    left: 18.1rem;
+}
+
+.cloud1 {
+    height: 65px;
+    width: 170px;
+    border-radius: 45px;
+    background-color: #fff;
+    position: absolute;
+    left: 3rem;
+    top: 6rem;
+    animation: cloud-moving 16s infinite linear;
+}
+
+.cloud1::before {
+    position: absolute;
+    top: -2.5rem;
+    left: 1rem;
+    content: ' ';
+    height: 50px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.cloud1::after {
+    content: '';
+    height: 50px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: -2rem;
+    left: 4.2rem;
+}
+
+.cloud2 {
+    height: 80px;
+    width: 300px;
+    border-radius: 45px;
+    background-color: #fff;
+    position: absolute;
+    top: 20rem;
+    left: 1rem;
+    /*3*/
+    animation: cloud-moving2 15s infinite linear;
+}
+
+.cloud2::before {
+    content: '';
+    height: 100px;
+    width: 100px;
+    background-color: #fff;
+    border-radius: 47%;
+    position: absolute;
+    top: -4rem;
+    left: 1.5rem;
+}
+
+.cloud2::after {
+    content: '';
+    height: 100px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: -4rem;
+    left: 6.3rem;
+}
+
+@keyframes cloud-moving2 {
+    from {
+        left: -7rem;
+    }
+
+    50% {
+        left: 50rem;
+    }
+
+    to {
+        left: 100rem;
+    }
+}
+
+@keyframes cloud-moving {
+    0% {
+        left: -20rem;
+        /* transform:translateX(-100%); */
+    }
+
+    50% {
+        left: 50rem;
+    }
+
+    to {
+        left: 100rem;
+
+        /* transform:translateX(0%); */
+    }
+
+}
